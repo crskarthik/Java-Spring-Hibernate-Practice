@@ -1,0 +1,7 @@
+127.0.0.1 - - [29/May/2019:16:14:09 -0700] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [29/May/2019:16:14:11 -0700] "GET /spring-rest-complete-practice/ HTTP/1.1" 200 167
+0:0:0:0:0:0:0:1 - - [29/May/2019:16:14:14 -0700] "GET /api/customers HTTP/1.1" 404 1091
+0:0:0:0:0:0:0:1 - - [29/May/2019:16:14:19 -0700] "GET /api/customers HTTP/1.1" 404 1091
+0:0:0:0:0:0:0:1 - - [29/May/2019:16:16:08 -0700] "GET /spring-rest-complete-practice/api/customers/1 HTTP/1.1" 200 87
+0:0:0:0:0:0:0:1 - - [29/May/2019:16:16:14 -0700] "GET /spring-rest-complete-practice/api/customers/ HTTP/1.1" 200 389
+0:0:0:0:0:0:0:1 - - [29/May/2019:16:16:32 -0700] "PUT /spring-rest-complete-practice/api/customers/ HTTP/1.1" 200 104

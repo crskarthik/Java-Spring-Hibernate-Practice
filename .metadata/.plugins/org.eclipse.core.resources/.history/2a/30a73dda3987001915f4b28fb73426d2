@@ -1,0 +1,34 @@
+package com.java.practice.hackerrank;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class FindElementInArrayOfArrays {
+	public static void main(String[] args) throws IOException {
+		InputStreamReader ir = new InputStreamReader(System.in);
+		BufferedReader br = new BufferedReader(ir);
+		int numOfTestCases = br.read();
+		while (numOfTestCases > 0) {
+
+			// Scan array dimensions
+
+			int m = br.read();
+			int n = br.read();
+
+			int[][] inp = new int[m][n];
+			for (int i = 0; i < m; i++) {
+				for (int j = 0; j < n; j++) {
+					inp[i][j] = br.read();
+				}
+			}
+			int target = br.read();
+			helper(inp, target);
+			numOfTestCases--;
+		}
+	}
+
+	public static int[] helper(int[][] inp, int target) {
+		return null;
+	}
+}

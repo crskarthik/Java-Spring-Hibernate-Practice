@@ -1,0 +1,34 @@
+package com.java.practice.strings;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class StringPermutations {
+	public static void main(String[] args) {
+		for (String s : stringcombinations("abc")) {
+			System.out.println(s);
+		}
+	}
+
+	public static Set<String> stringcombinations(String s) {
+		Set<String> combinations = new HashSet<>();
+		combinations.add(s);
+		combinations.add(swapChar(s, 0, s.length()-1));
+		combinations.add(swapChar(s, s.length()-1, 0));
+		for (int i = 0; i < s.length(); i++) {
+			for (int j = 0; j < s.length(); j++) {
+				combinations.add(swapChar(s, i, j));
+			}
+		}
+		return combinations;
+	}
+
+	public static String swapChar(String s, int i, int j) {
+		char[] chars = s.toCharArray();
+		char temp = chars[i];
+		chars[i] = chars[j];
+		chars[j] = temp;
+		return new String(chars);
+	}
+
+}

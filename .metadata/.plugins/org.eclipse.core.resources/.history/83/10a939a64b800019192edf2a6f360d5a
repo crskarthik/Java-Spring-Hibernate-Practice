@@ -1,0 +1,5 @@
+package com.karthik.spring.exceptions;
+
+public class ObjectNotFoundException extends RuntimeException{
+
+}

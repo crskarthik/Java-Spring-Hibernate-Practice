@@ -1,0 +1,10 @@
+package com.java.practice.other;
+
+public class StudentStaticDriver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,35 @@
+package com.java.practice.strings;
+
+import java.util.ArrayList;
+
+public class AssumeSpecialCharAsSUM {
+
+	/*
+	 * Given the following inputs, we expect the corresponding output: "1a2b3c"
+	 * => 6 (1+2+3) "123ab!45c" => 168 (123+45) "abcdef" => 0 (no Integers in
+	 * String)
+	 */
+	public static void main(String[] args) {
+		System.out.println(calculate("1a2b3c"));
+	}
+
+	private static int calculate(String s) {
+		ArrayList<String> nums = new ArrayList<>();
+		String temp = "";
+		for(int i=0;i<s.length();i++) {
+			if(Character.isDigit(s.charAt(i))) {
+				temp+=s.charAt(i);
+			}else {
+				if(temp!="") {
+					nums.add(temp);
+				}
+				temp="";
+			}
+		}
+		int sum=0;
+		for(String t:nums ) {
+			sum+=Integer.parseInt(t);
+		}
+		return sum;
+	}
+}

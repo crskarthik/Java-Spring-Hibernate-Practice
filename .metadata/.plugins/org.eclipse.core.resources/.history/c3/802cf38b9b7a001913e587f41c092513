@@ -1,0 +1,10 @@
+package com.karthik.hibernate.oneOnOne;
+
+public class InstructorDriver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

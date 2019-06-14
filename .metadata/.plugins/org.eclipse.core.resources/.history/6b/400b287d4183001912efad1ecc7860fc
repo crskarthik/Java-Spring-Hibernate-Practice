@@ -1,0 +1,16 @@
+package com.java.practice.strings;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class StringPermutations {
+	public static void main(String[] args) {
+		
+	}
+	
+	public static List<String> stringCombinations(String s) {
+		List<String> combinations = new ArrayList<>();
+			
+		return combinations;
+	}
+}

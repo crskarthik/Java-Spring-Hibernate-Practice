@@ -1,0 +1,5 @@
+package com.karthik.hibernate.oneOnOne;
+
+public class Instructor {
+
+}

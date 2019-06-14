@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.java.practice.recusion&apos; to &apos;com.java.practice.recursion&apos;&#x0D;&#x0A;- Original project: &apos;programming-problems&apos;&#x0D;&#x0A;- Original element: &apos;programming-problems/src/com.java.practice.recusion&apos;&#x0D;&#x0A;- Renamed element: &apos;programming-problems/src/com.java.practice.recursion&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.java.practice.recusion&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.java.practice.recusion" name="com.java.practice.recursion" qualified="false" references="true" stamp="1559678239280" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,32 @@
+package com.karthik.hibernate.entity;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class StudentDriver {
+
+	public static void main(String[] args) {
+
+		SessionFactory fac = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Student.class)
+				.buildSessionFactory();
+		Session session = fac.getCurrentSession();
+
+		try {
+//			Student tempStudent = new Student("Karthik", "Chinta", "karthik@gmail.com");
+			session.beginTransaction();
+//			session.save(tempStudent);
+//			session.getTransaction().commit();
+			Student s = new Student();
+			s=session.get(Student.class,1);
+			System.out.println(s);
+			
+		} catch (Exception e) {
+			session.getTransaction().rollback();
+			e.printStackTrace();
+		} finally {
+			fac.close();
+		}
+	}
+
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Hello</title>
+<link rel="stylesheet" th:href="@{/css/helloworldDemo.css}" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="jumbotron">
+		<p th:text="'Time on server is '+${theDate}" />
+	</div>
+</body>
+</html>

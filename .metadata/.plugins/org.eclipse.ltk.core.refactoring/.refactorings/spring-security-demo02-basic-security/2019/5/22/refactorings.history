@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.karthik.spring.java.config&apos; to &apos;rest-practice/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;spring-security-demo02-basic-security&apos;&#x0D;&#x0A;- Destination element: &apos;rest-practice/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;spring-security-demo02-basic-security/src/main/java/com.karthik.spring.java.config&apos;" description="Copy package" destination="=rest-practice/src\/main\/java" element1="/src\/main\/java&lt;com.karthik.spring.java.config" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1558928661161" version="1.0"/>
+</session>

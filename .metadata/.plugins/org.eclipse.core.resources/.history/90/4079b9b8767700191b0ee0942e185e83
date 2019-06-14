@@ -1,0 +1,17 @@
+package com.karthik.hibernate.entity;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+
+public class StudentDriver {
+
+	public static void main(String[] args) {
+
+		SessionFactory fac = new Configuration()
+				.configure("hibernate.cfg.xml")
+				.addAnnotatedClass(Student.class)
+				.buildSessionFactory();
+	}
+
+}

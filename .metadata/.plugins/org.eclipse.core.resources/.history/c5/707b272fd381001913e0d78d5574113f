@@ -1,0 +1,27 @@
+package com.java.practice.strings;
+
+public class StringReverse {
+	public static void main(String[] args) {
+//		System.out.println(reverseString("a%b$c"));
+		reverseString("a%b$c");
+	}
+
+	public static String reverseString(String str) {
+		char tempChar;
+		int rightFlag=str.length()-1;
+		for(int i = 0;i<str.length();i++) {
+			if(str.charAt(i)>='a'&&str.charAt(i)<='Z') {
+				boolean toBreak=false;
+				for(int j=rightFlag;j>i&&!toBreak;j++) {
+					if(str.charAt(j)>='a'&&str.charAt(j)<='Z') {
+						String s = str.substring(0, i)+str.charAt(j)
+						+str.substring(i,j)+str.charAt(i)+str.substring(j, str.length()-1);
+						toBreak = true;
+						rightFlag=j-1;
+					}
+				}
+			}
+		}
+		return temp;
+	}
+}

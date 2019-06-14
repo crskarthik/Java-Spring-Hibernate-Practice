@@ -1,0 +1,30 @@
+package com.java.practice.walmart;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class SortValuesBeforeXIntoLinkedList {
+	public static void main(String[] args) throws IOException {
+		InputStreamReader ir = new InputStreamReader(System.in);
+		BufferedReader br = new BufferedReader(ir);
+		
+		int numOfElements = Integer.parseInt(br.readLine());
+		LinkedList<Integer> ll = new LinkedList<>();
+		while(numOfElements>0) {
+			numOfElements--;
+			ll.addLast(Integer.parseInt(br.readLine()));
+		}
+		ArrayList<Integer> al =new ArrayList<>();
+		System.out.println(ll.indexOf(3));
+		for(int i=ll.indexOf(3);i<ll.size();i++) {
+			if(ll.get(i)<3) {
+				al.add(ll.remove(i));
+			}
+		}
+		ll.forEach(System.out::println);
+		
+	}
+}

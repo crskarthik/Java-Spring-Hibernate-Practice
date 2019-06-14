@@ -1,0 +1,18 @@
+package com.karthik.hibernate.oneOnOne;
+
+public class InstructorDriver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Instructor instruct = new Instructor("Karthik", "Chinta", "prof@ins.edu");
+		InstructorDetail instructorDetail = new InstructorDetail("Crazy Instructor", "Blogging");
+				
+				try {
+					instruct.setInstructorDetail(instructorDetail);
+					
+				} catch (Exception e) {
+					// TODO: handle exception
+				}
+	}
+
+}

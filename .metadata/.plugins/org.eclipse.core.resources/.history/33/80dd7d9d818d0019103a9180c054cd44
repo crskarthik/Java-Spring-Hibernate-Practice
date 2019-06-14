@@ -1,0 +1,26 @@
+package com.java.practice.hackerrank;
+
+public class ArrayManipulation {
+    // Complete the arrayManipulation function below.
+    static long arrayManipulation(int n, int[][] queries) {
+        long sum=0;
+        long[] arr = new long[n];
+        // for(int i=0;i<queries.length;i++){
+            int counter = 0;
+    for(int j=queries[counter][0]-1;counter<queries.length&&j<queries[counter][1];j++){
+                arr[j]+=queries[counter][2];
+                if(arr[j]>sum){
+                    sum=arr[j];
+                }
+                if(j==queries[counter][1]-1){
+                counter++;
+                }
+            }
+        // }
+        return sum;
+    }
+    public static void main(String[] args) {
+		int[][] queries = new int[][] {{1,2,100},{2,5,100},{3,4,100}};
+		arrayManipulation(5, queries);
+	}
+}
